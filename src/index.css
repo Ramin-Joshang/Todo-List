@@ -1,13 +1,109 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*:hover,
+*:focus {
+  outline: 0 !important;
+}
+
+span,
+button,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+h1 {
+  animation: changeColor 15s linear infinite, doit 5s linear infinite;
+  -webkit-animation: changeColor 15s linear infinite, doit 5s linear infinite;
+}
+
+@keyframes changeColor {
+  10% {
+    color: aqua;
+  }
+
+  20% {
+    color: rgb(0, 140, 255);
+  }
+
+  30% {
+    color: yellow;
+  }
+
+  40% {
+    color: green;
+  }
+
+  50% {
+    color: peru;
+  }
+
+  60% {
+    color: hotpink;
+  }
+
+  70% {
+    color: red;
+  }
+
+  80% {
+    color: purple;
+  }
+
+  90% {
+    color: cornflowerblue;
+  }
+
+  100% {
+    color: navajowhite;
+  }
+
+}
+
+@keyframes doit {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+  }
+
+  50% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+
+  }
+
+  100% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+
 }
