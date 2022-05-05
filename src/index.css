@@ -19,6 +19,7 @@ input[type="checkbox"] {
 h1 {
   animation: changeColor 15s linear infinite, doit 5s linear infinite;
   -webkit-animation: changeColor 15s linear infinite, doit 5s linear infinite;
+  font-family: "operator mono lig";
 }
 
 @keyframes changeColor {
